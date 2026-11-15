@@ -1,0 +1,30 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* High-contrast focus states for elderly accessibility */
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #4f46e5;
+    outline-offset: 2px;
+}
+
+/* Smooth card transitions */
+.med-card {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.med-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Custom terminal scrollbar for Email Dispatch Log */
+#email-log-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#email-log-list::-webkit-scrollbar-thumb {
+    background-color: #334155;
+    border-radius: 4px;
+}
